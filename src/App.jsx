@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Logo from "../src/assets/Logo.png"
 import './App.css'
+import { Toaster, toast } from 'sonner'
 
 function App() {
 
@@ -28,7 +29,18 @@ function App() {
 
   const handleSend = (event) => {
     event.preventDefault()
-    console.log(datosFormu)
+    //console.log(datosFormu)
+    setDatosFormu({
+      nombre: "",
+      edad: "",
+      ocupacion: "",
+      motivo: "",
+      disponibilidad: "",
+      telefono: "",
+      email: "",
+      comentarios: ""
+    })
+    toast.success('Formulario Enviado!')
   }
 
   function convertirATitulo(cadena) {
@@ -46,6 +58,8 @@ function App() {
       </header>
 
       <h3>Formulario de Contacto</h3>
+      
+      <Toaster richColors />
 
       <form>
       <div className="form-group-1 form-group-2">
