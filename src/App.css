@@ -86,13 +86,13 @@ textarea {
   padding: 10px;
   cursor: pointer;
 }
-.btn_volver {
+.btn_cancelar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
   background-color: white;
-  width: 80px;
+  width: 90px;
   height: 30px;
   color: #61768b;
   border: none;
@@ -101,9 +101,17 @@ textarea {
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
 }
 
+.cerrar_confirm {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 5px;
+  text-decoration: none;
+  font-size: 12px;
+}
 
 .botones {
   display: flex;

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Logo from "../src/assets/Logo.png"
-import Img_insta from "../src/assets/Img_insta.png"
 import './App.css'
 import { Link, useNavigate } from "react-router-dom";
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 function App() {
 
@@ -272,8 +272,8 @@ function App() {
       <div className='botones'>
         <button className='btn_enviar' onClick={handleSend}>Enviar</button>
         
-        <Link to="https://www.instagram.com/maternandojuntasyenred/" className='btn_volver'>
-          Volver <img width="20" src={Img_insta} alt="img_insta" />
+        <Link to="https://www.instagram.com/maternandojuntasyenred/" className='btn_cancelar'>
+          Cancelar <HighlightOffIcon />
         </Link> 
       </div>
     </>
