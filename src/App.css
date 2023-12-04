@@ -5,12 +5,24 @@ header {
   align-items: center;
 }
 
+.header_confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
   width: 20%;
   padding: 10px;
   border-radius: 50%;
 }
-
+.logo_confirm {
+  width: 60%;
+  border-radius: 50%;
+}
+p {
+  text-align: center;
+}
 h3 {
   text-align: center;
 }
@@ -47,6 +59,10 @@ input, select {
   border-radius: 6px;
 }
 
+input::placeholder {
+  font-style: italic;
+}
+
 textarea {
   width: 100%;
   border: solid 1px #e3e3e3;
@@ -57,7 +73,7 @@ textarea {
   border-radius: 6px;
 }
 
-button {
+.btn_enviar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +85,52 @@ button {
   border-radius: 3px;
   padding: 10px;
   cursor: pointer;
-  margin: 10px auto;
+}
+.btn_volver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: white;
+  width: 80px;
+  height: 30px;
+  color: #61768b;
+  border: none;
+  border: solid 2px rgb(0,97,167);
+  border-radius: 3px;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.botones {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.botones_confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 5px;
+  width: 80%;
+  margin: 40px auto 10px auto;
+  background-color: #d8e7ef;
+  padding-bottom: 10px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 2px 3px rgba(0,0,0,.1);
+}
+
+.msg-error {
+  color: red;
+  font-size: 12px;
 }
 
 @media (min-width: 769px) {
@@ -96,5 +157,13 @@ button {
 
   .form-group-4 {
     width: 22%;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .logo_confirm {
+    width: 30%;
   }
 }
