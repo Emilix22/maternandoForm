@@ -142,6 +142,9 @@ textarea {
 }
 
 @media (min-width: 769px) {
+  header {
+    justify-content: center;
+  }
   .logo {
     width: 10%;
   }

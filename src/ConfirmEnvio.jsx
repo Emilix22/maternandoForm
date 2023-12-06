@@ -17,7 +17,7 @@ function ConfirmEnvio() {
                     <img className='logo_confirm' src={Logo} alt="logo" />
                 </header>
 
-                <p>Gracias por contactarnos<br />En breve nos pondremos en contacto.</p>
+                <p>Gracias por contactarnos.<br />En breve nos pondremos en contacto.</p>
 
             </article>
         </div>
