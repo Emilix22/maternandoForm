@@ -295,9 +295,9 @@ function App() {
       <div className='botones'>
         <button className='btn_enviar' onClick={handleSend}>Enviar</button>
         
-        <Link to="https://www.instagram.com/maternandojuntasyenred/" className='btn_cancelar'>
+        {/* <Link to="https://www.instagram.com/maternandojuntasyenred/" className='btn_cancelar'>
           Cancelar <HighlightOffIcon />
-        </Link> 
+        </Link>  */}
       </div>
     </>
   )

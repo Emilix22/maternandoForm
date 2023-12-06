@@ -9,9 +9,9 @@ function ConfirmEnvio() {
     return (
         <div>
             <article className='container'>
-                <Link to="https://www.instagram.com/maternandojuntasyenred/" className='cerrar_confirm'>
+                {/* <Link to="https://www.instagram.com/maternandojuntasyenred/" className='cerrar_confirm'>
                     Cerrar <HighlightOffIcon />
-                </Link>
+                </Link> */}
 
                 <header className='header_confirm'>
                     <img className='logo_confirm' src={Logo} alt="logo" />
