@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Logo from "../src/assets/Logo.png"
 import './App.css'
 import { Link, useNavigate } from "react-router-dom";
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import emailjs from '@emailjs/browser';
 
 function App() {
 
@@ -20,6 +21,19 @@ function App() {
   const [errors, setErrors] = useState({});
 
   const history = useNavigate();
+
+  const form = useRef();
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // };
 
   const expressions = {
     nombre: /^[a-zA-ZÀ-ÿ\s]{5,60}$/,
@@ -117,7 +131,16 @@ function App() {
       return setErrors({ ...errors, email: "Requerido - sólo formato de email" });
     }
 
+
     console.log(datosFormu) // mandar el mail
+    
+    emailjs.sendForm('service_7q9w1st', 'template_m01pqps', form.current, '4dn0XN4JO2RMnrunx')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
     setDatosFormu({
       nombre: "",
       edad: "",
@@ -147,7 +170,7 @@ function App() {
 
       <h3>Formulario de Contacto</h3>
 
-      <form>
+      <form ref={form}>
         <div className="form-group-1 form-group-2">
           <label htmlFor="nombre">Nombre y Apellido</label>
           <input
