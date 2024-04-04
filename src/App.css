@@ -33,6 +33,7 @@ form {
   margin: 5px auto;
   padding: 20px 0px;
   box-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 2px 3px rgba(0,0,0,.1);
+  background-color: #61768b;
 }
 
 .form-group-1 {
@@ -46,6 +47,10 @@ form {
   flex-direction: column;
   text-align: center;
   margin: auto;
+}
+
+label {
+  color: #d8e7ef;
 }
 
 input, select {
@@ -139,6 +144,9 @@ textarea {
 .msg-error {
   color: red;
   font-size: 12px;
+  background-color: #d8e7ef;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 @media (min-width: 769px) {

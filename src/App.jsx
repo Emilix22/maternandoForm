@@ -131,9 +131,9 @@ function App() {
       return setErrors({ ...errors, email: "Requerido - sólo formato de email" });
     }
 
-
-    console.log(datosFormu) // mandar el mail
+    // console.log(datosFormu) 
     
+    // mandar el mail  
     emailjs.sendForm('service_7q9w1st', 'template_m01pqps', form.current, '4dn0XN4JO2RMnrunx')
       .then((result) => {
           console.log(result.text);
