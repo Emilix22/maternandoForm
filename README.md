@@ -1,8 +1,12 @@
-# React + Vite
+# MaternandoForm
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de formulario web para un instagram de psicólogas, mediante el cual sus potenciales pacientes pudieran contactarse, y en tal caso, informar el motivo de su consulta.
 
-Currently, two official plugins are available:
+## Cómo usar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para usar el formulario web, simplemente visita el instagram @maternandojuntasyenred.
+
+## Contacto
+
+Si tienes alguna pregunta o comentario sobre el proyecto, no dudes en contactar al autor **www.emilixweb.com**
+
