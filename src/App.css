@@ -149,6 +149,15 @@ textarea {
   border-radius: 3px;
 }
 
+.advice {
+  background-color: #d8e7ef;
+  color: #61768b;
+  padding: 10px;
+  border: solid 1px #d8e7ef;
+  border-radius: 8px;
+  width: 95%;
+}
+
 @media (min-width: 769px) {
   .logo {
     width: 10%;

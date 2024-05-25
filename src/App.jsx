@@ -171,6 +171,9 @@ function App() {
       <h3>Formulario de Contacto</h3>
 
       <form ref={form}>
+        <p className='advice'>
+        Modalidad virtual: Sesión por google meet (45 minutos).
+        </p>
         <div className="form-group-1 form-group-2">
           <label htmlFor="nombre">Nombre y Apellido</label>
           <input
