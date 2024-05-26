@@ -156,6 +156,7 @@ textarea {
   border: solid 1px #d8e7ef;
   border-radius: 8px;
   width: 95%;
+  margin: auto;
 }
 
 @media (min-width: 769px) {

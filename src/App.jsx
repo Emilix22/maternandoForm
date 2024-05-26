@@ -172,7 +172,7 @@ function App() {
 
       <form ref={form}>
         <p className='advice'>
-        Modalidad virtual: Sesión por google meet (45 minutos).
+        Modalidad virtual: Sesión por google meet (45 minutos)
         </p>
         <div className="form-group-1 form-group-2">
           <label htmlFor="nombre">Nombre y Apellido</label>
